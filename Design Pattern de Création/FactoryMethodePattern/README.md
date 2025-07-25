@@ -197,4 +197,3 @@ Utilise ce pattern lorsque :
 
 Ce pattern prépare aussi le terrain pour des patterns plus évolués comme **Abstract Factory**, **Builder** ou **Dependency Injection**.
 
-Souhaites-tu que je te montre comment le convertir en Abstract Factory ou injecter dynamiquement le type ?
