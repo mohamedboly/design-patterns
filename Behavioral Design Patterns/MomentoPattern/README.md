@@ -1,16 +1,17 @@
 Pattern Memento – Explication et Implémentation
 
-Introduction
 Le Memento Pattern est un patron de conception comportemental qui permet de sauvegarder et restaurer l’état d’un objet sans exposer ses détails internes.
 Il est particulièrement utile pour implémenter des fonctionnalités d’annulation (Undo/Redo) ou pour revenir à un état précédent dans un processus, tout en respectant l’encapsulation.
 
 Problématique
+
 Lorsqu’on souhaite sauvegarder l’état d’un objet, on pourrait être tenté de copier ses champs à partir de l’extérieur. Cela pose deux problèmes :
 
 * Briser l’encapsulation : exposition de champs privés ou ajout de getters inutiles.
 * Couplage fort : toute modification interne de l’objet peut casser le code qui le manipule.
 
 Objectif
+
 Fournir un mécanisme permettant de :
 
 * Sauvegarder l’état complet d’un objet, y compris ses champs privés.
@@ -24,6 +25,7 @@ Cas d’utilisation
 * Points de restauration dans un logiciel ou un jeu vidéo
 
 Exemple sans Memento
+
 Dans cet exemple, les champs sont publics et l’historique est géré en dehors de l’objet, violant l’encapsulation.
 
 ```java
