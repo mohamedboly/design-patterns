@@ -6,24 +6,13 @@ Quand un événement se produit dans un composant (clic, saisie, sélection, etc
 au lieu de mettre la logique directement dans le code du composant qui émet l’événement,
 on déplace cette logique dans un objet central appelé **Médiateur**.
 
----
 
 ## Définition
 
 Le **Mediator Pattern** est un patron de conception comportemental qui définit un objet central (le Médiateur) chargé de gérer la communication entre plusieurs composants.
 Ainsi, les composants n’interagissent pas directement entre eux mais passent par le Médiateur.
 
----
 
-## Notion de "composant"
-
-Dans ce contexte, un composant désigne généralement une **instance d’une classe** participant à une interaction.
-
-Exemple : une instance de `Button` ou `TextBox` dans une fenêtre.
-
-Les composants sont des objets "vivants" dans le programme, qui émettent ou reçoivent des événements.
-
----
 
 ## Pourquoi utiliser un Médiateur
 
@@ -39,7 +28,7 @@ On peut modifier les règles d’interaction sans toucher aux composants eux-mê
 
 Les composants peuvent être utilisés dans d’autres contextes avec un autre Médiateur.
 
----
+
 
 ## Cas d’utilisation
 
