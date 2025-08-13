@@ -8,6 +8,19 @@ Le pattern Adapter est similaire à l’adaptateur entre une prise américaine e
 
 Dans notre exemple, nous avons un service qui rend des menus en **XML**, et nous souhaitons utiliser une bibliothèque tierce (plus performante) qui ne comprend que le **JSON**.
 
+### Contexte de l’exemple
+
+Imaginons que nous créons une application type *Zomato* :
+
+- Notre service actuel (`XmlMenuRenderer`) travaille uniquement avec des menus au format **XML**.
+- Nous découvrons une librairie tierce (`FancyUIService`) qui offre une meilleure UI, mais elle ne comprend que du **JSON**.
+
+**Problème** :
+- Impossible de modifier `FancyUIService` (pas d’accès au code source).
+- Réécrire tout notre code client pour qu’il parle JSON serait coûteux et risqué.
+
+**Solution** :  
+Créer un **Adapter** qui fera la conversion XML → JSON et utilisera la librairie tierce.
 
 ## 2. Pertinence du pattern Adapter
 
