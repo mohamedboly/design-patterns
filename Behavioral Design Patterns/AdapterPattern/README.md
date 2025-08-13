@@ -10,12 +10,19 @@ Dans notre exemple, nous avons un service qui rend des menus en **XML**, et nous
 
 ### Contexte de l’exemple
 
-Imaginons que nous créons une application type *Zomato* :
+Imagine que tu développes une application type Zomato qui collecte des menus de restaurants en XML et les affiche joliment.
+Tout marche bien… jusqu’au jour où tu veux améliorer drastiquement l’UI grâce à une librairie tierce ultra-performante.
+Problème : cette librairie ne comprend que du JSON.
 
-- Notre service actuel (`XmlMenuRenderer`) travaille uniquement avec des menus au format **XML**.
-- Nous découvrons une librairie tierce (`FancyUIService`) qui offre une meilleure UI, mais elle ne comprend que du **JSON**.
+Solution a risque :
 
-**Problème** :
+Changer la librairie pour qu’elle accepte du XML est risqué :
+
+- Tu pourrais casser du code existant
+
+- Tu n’as peut-être même pas accès au code source
+
+Donc : 
 - Impossible de modifier `FancyUIService` (pas d’accès au code source).
 - Réécrire tout notre code client pour qu’il parle JSON serait coûteux et risqué.
 
