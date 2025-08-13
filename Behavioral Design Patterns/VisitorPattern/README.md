@@ -1,4 +1,4 @@
-# Pattern Visitor en Java – Guide Complet avec Questions & Réponses
+# Pattern Visitor – Guide Complet
 
 ## 1. Introduction
 Le **pattern Visitor** est un patron de conception comportemental qui permet de **séparer les algorithmes** (opérations) des objets sur lesquels ils opèrent. Il devient particulièrement pertinent quand la **hiérarchie d’objets est stable** mais que **les opérations à appliquer évoluent ou se multiplient**.
